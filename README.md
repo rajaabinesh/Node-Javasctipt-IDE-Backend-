@@ -13,28 +13,23 @@
 ## Prerequisite :
 ### NPM
      npm v5.5.1
-    node v8.9.1
+     node v8.9.1
 ### Database
     MySQL server v( 5.7.26-ndb-7.6.10)
   
 ### Packages :
-    asyncawait v1.0.8
-    body-parser v1.17.0
-    express v4.15.0
-    helmet v3.18.0
-    promise-mysql v3.3.1
-    xss v1.0.6
-    babel-cli v6.26.0
-    babel-core v6.26.0
-    babel-preset-env v1.6.1
-    babel-preset-es2015 v6.24.1
-    nodemon v1.19.1
-    
- 
+ * [asyncawait v1.0.8](https://www.npmjs.com/package/asyncawait) - Avoid Callbacks hell
+ * [body-parser v1.17.0](https://www.npmjs.com/package/body-parser) - Parse incoming request bodies in a middleware
+ * [express v4.15.0](https://www.npmjs.com/package/express) - Fast, unopinionated, minimalist web framework for node
+ * [helmet v3.18.0](https://www.npmjs.com/package/helmet) - Secure your Express apps by setting various HTTP headers
+ * [promise-mysql v3.3.1](https://www.npmjs.com/package/promise-mysql) - Wrapper for mysqljs/mysql that wraps function calls with [Bluebird](https://github.com/petkaantonov/bluebird/) promises
+ * [xss v1.0.6](https://www.npmjs.com/package/xss) -  Used tofilter input from users to prevent XSS attacks
+ * [nodemon v1.19.1](https://www.npmjs.com/package/nodemon) - restarting the node application when file changes in the directory are detected.
+
 ## Install
 
 ### NPM
- NPM package  install by the following command
+ NPM packages install by the following command
 
 ```bash
 npm install
@@ -54,8 +49,9 @@ npm install
   ```
 ## Validations Done
 
-* xss attacks to be avoided using [helmet](https://www.npmjs.com/package/helmet)  
+* xss attacks to be avoided using [helmet](https://www.npmjs.com/package/helmet) 
 * xss content filter using npm pacage [xss](https://www.npmjs.com/package/xss)
+* Empty content are avoided in store process.
 
 ## Run Application
 ### DB Script
