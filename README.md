@@ -55,7 +55,7 @@ npm install
 
 ## Run Application
 ### DB Script
-  First, we run the query in starter_script.sql `/DB Script/starter_script.sql`
+  First, we run the query in [starter_script.sql](https://github.com/rajaabinesh/Node-Javasctipt-IDE-Backend-/blob/master/DB%20Script/starter_script.sql)
 
 ### Start Server
   Start the Server by using the following command
