@@ -22,7 +22,7 @@ I have developed a back-end application using Node.js for storing the data on an
  * [express v4.15.0](https://www.npmjs.com/package/express) - Fast, unopinionated, minimalist web framework for node
  * [helmet v3.18.0](https://www.npmjs.com/package/helmet) - Secure your Express apps by setting various HTTP headers
  * [promise-mysql v3.3.1](https://www.npmjs.com/package/promise-mysql) - Wrapper for mysqljs/mysql that wraps function calls with [Bluebird](https://github.com/petkaantonov/bluebird/) promises
- * [xss v1.0.6](https://www.npmjs.com/package/xss) -  Used tofilter input from users to prevent XSS attacks
+ * [xss v1.0.6](https://www.npmjs.com/package/xss) -  Used to filter input from users to prevent XSS attacks
  * [nodemon v1.19.1](https://www.npmjs.com/package/nodemon) - restarting the node application when file changes in the directory are detected.
 
 ## Install
@@ -49,7 +49,7 @@ npm install
 ## Validations Done
 
 * Securing the application by adding HTTP headers ***X-XSS-Protection →1; mode=block***  to avoid xss attacks using [helmet](https://www.npmjs.com/package/helmet) 
-* Added HTML content filter by using  [xss](https://www.npmjs.com/package/xss) to avoid xss attacks
+* Added HTML content filter by using  [xss](https://www.npmjs.com/package/xss)  to prevent XSS attacks from the user Input
 * Empty contents are avoided in store process.
 
 ## Run Application
