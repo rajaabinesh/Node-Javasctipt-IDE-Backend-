@@ -62,3 +62,42 @@ npm install
   ```bash
 npm start
 ```
+### List of API
+Sharing postman collection : https://www.getpostman.com/collections/ad1b13b0c38bf9a1a409
+We are using two api
+1. For getting the data 
+    Method   : GET
+    URL      : http://localhost:8085/api/file
+    Response : {
+                  "code": 200,
+                  "status": "success",
+                  "message": "File Sent Successfully",
+                  "data": {
+                            "code": 200,
+                            "status": "success",
+                            "message": "File Sent Successfully",
+                            "data": {
+                            "id": 1,
+                            "text_code": "function myFunction() {\n  var str = \"How are you doing today?\";\n  var res =                                             str.split(\" \");\n\tconsole.log(res)\n}"
+                                }
+                            }
+           
+ 2. For Storing the data 
+    Method   : POST
+    URL      : http://localhost:8085/api/file
+    Request  : key = code
+               value = function myFunction() {
+                        var str = "How are you doing today?";
+                        var res = str.split(" ");
+	                      console.log(res)
+                       }
+    Response : {
+                "code": 200,
+                "status": "success",
+                "message": "File saved Successfully",
+                "data": {
+                    "code": "function myFunction() {\n  var str = \"How are you doing today?\";\n  var res = str.split(\"                                   \");\n\tconsole.log(res)\n}"
+                  }
+                }
+    
+    
