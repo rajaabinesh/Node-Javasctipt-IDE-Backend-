@@ -14,7 +14,7 @@ I have developed a back-end application using Node.js for storing the data on an
      npm v5.5.1
      node v8.9.1
 ### Database
-    MySQL server v( 5.7.26-ndb-7.6.10)
+    MySQL v( 5.7.26-ndb-7.6.10)
   
 ### Packages :
  * [asyncawait v1.0.8](https://www.npmjs.com/package/asyncawait) - Avoid Callbacks hell
@@ -48,8 +48,8 @@ npm install
   ```
 ## Validations Done
 
-* xss attacks to be avoided using [helmet](https://www.npmjs.com/package/helmet) 
-* xss content filter using npm pacage [xss](https://www.npmjs.com/package/xss)
+* Securing the application by adding HTTP headers ***X-XSS-Protection →1; mode=block***  to avoid xss attacks using [helmet](https://www.npmjs.com/package/helmet) 
+* Added HTML content filter by using  [xss](https://www.npmjs.com/package/xss) npm package
 * Empty contents are avoided in store process.
 
 ## Run Application
