@@ -64,10 +64,38 @@ npm start
 ### List of APIs
 Sharing postman collection : https://www.getpostman.com/collections/ad1b13b0c38bf9a1a409
 We are using two APIs
-1. Fetching the data from Front-end
+
+#### 1.Storing the data in the db
+ ```javascript 
+
+    Method   : POST
+    URL      : http://localhost:8085/api/file
+    Request  : 
+    {code:
+                function myFunction() {
+                        var str = "How are you doing today?";
+                        var res = str.split(" ");
+	                      console.log(res)
+                       }
+		}
+    Response : 
+    {
+                "code": 200,
+                "status": "success",
+                "message": "File saved Successfully",
+                "data": {
+                    "code": "function myFunction() {\n  var str = \"How are you doing today?\";\n  var res = str.split(\"                                   \");\n\tconsole.log(res)\n}"
+                  }
+                }
+```		
+
+#### 2. Fetching the data from Front-end
+ ```javascript 
+
     Method   : GET
     URL      : http://localhost:8085/api/file
-    Response : {
+    Response :
+    		{
                   "code": 200,
                   "status": "success",
                   "message": "File Sent Successfully",
@@ -78,25 +106,10 @@ We are using two APIs
                             "data": {
                             "id": 1,
                             "text_code": "function myFunction() {\n  var str = \"How are you doing today?\";\n  var res =                                             str.split(\" \");\n\tconsole.log(res)\n}"
-                                }
                             }
-           
- 2.Storing the data in the db
-    Method   : POST
-    URL      : http://localhost:8085/api/file
-    Request  : key = code
-               value = function myFunction() {
-                        var str = "How are you doing today?";
-                        var res = str.split(" ");
-	                      console.log(res)
-                       }
-    Response : {
-                "code": 200,
-                "status": "success",
-                "message": "File saved Successfully",
-                "data": {
-                    "code": "function myFunction() {\n  var str = \"How are you doing today?\";\n  var res = str.split(\"                                   \");\n\tconsole.log(res)\n}"
-                  }
-                }
+                   }
+		
+``` 
+ 
     
     
