@@ -1,16 +1,15 @@
 # Node-JavaScript-IDE(Backend)
 
-### Given Assignment Task:
+### Given Task:
 
 * Create an API to accept incoming request from front end containing code
 * Handle XSS attacks
 * Validate the incoming request
 
 ## Description 
-  Developing Node application for storing the data by an incoming request from front end containing code. 
-    MySQL database using for storing the data.
+I have developed a back-end application using Node.js for storing the data on an incoming request from a front-end application   containing code. MySQL database is used for storing the data.
 
-## Prerequisite :
+## Prerequisites :
 ### NPM
      npm v5.5.1
      node v8.9.1
@@ -51,21 +50,21 @@ npm install
 
 * xss attacks to be avoided using [helmet](https://www.npmjs.com/package/helmet) 
 * xss content filter using npm pacage [xss](https://www.npmjs.com/package/xss)
-* Empty content are avoided in store process.
+* Empty contents are avoided in store process.
 
 ## Run Application
 ### DB Script
-  First, we run the query in [starter_script.sql](https://github.com/rajaabinesh/Node-Javasctipt-IDE-Backend-/blob/master/DB%20Script/starter_script.sql)
+Initially we need to run the query in [starter_script.sql](https://github.com/rajaabinesh/Node-Javasctipt-IDE-Backend-/blob/master/DB%20Script/starter_script.sql)
 
 ### Start Server
   Start the Server by using the following command
   ```bash
 npm start
 ```
-### List of API
+### List of APIs
 Sharing postman collection : https://www.getpostman.com/collections/ad1b13b0c38bf9a1a409
-We are using two api
-1. For getting the data 
+We are using two APIs
+1. Fetching the data from Front-end
     Method   : GET
     URL      : http://localhost:8085/api/file
     Response : {
@@ -82,7 +81,7 @@ We are using two api
                                 }
                             }
            
- 2. For Storing the data 
+ 2.Storing the data in the db
     Method   : POST
     URL      : http://localhost:8085/api/file
     Request  : key = code
