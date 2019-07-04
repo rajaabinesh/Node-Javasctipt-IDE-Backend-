@@ -71,13 +71,8 @@ We are using two APIs
     Method   : POST
     URL      : http://localhost:8085/api/file
     Request  : 
-    {code:
-                function myFunction() {
-                        var str = "How are you doing today?";
-                        var res = str.split(" ");
-	                      console.log(res)
-                       }
-		}
+    {"code":
+               "function myFunction() { var str = "How are you doing today?";var res = str.split(" ");console.log(res) }}"
     Response : 
     {
                 "code": 200,
