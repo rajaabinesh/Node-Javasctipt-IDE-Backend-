@@ -49,7 +49,7 @@ npm install
 ## Validations Done
 
 * Securing the application by adding HTTP headers ***X-XSS-Protection →1; mode=block***  to avoid xss attacks using [helmet](https://www.npmjs.com/package/helmet) 
-* Added HTML content filter by using  [xss](https://www.npmjs.com/package/xss) npm package
+* Added HTML content filter by using  [xss](https://www.npmjs.com/package/xss) to avoid xss attacks
 * Empty contents are avoided in store process.
 
 ## Run Application
@@ -105,6 +105,7 @@ We are using two APIs
                    }
 		
 ``` 
- 
+## Front-End :
+Refer : https://github.com/suriyagsmplusinfotech/react-javascript-ide
     
     
