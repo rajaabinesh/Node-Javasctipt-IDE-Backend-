@@ -7,7 +7,7 @@
 * Validate the incoming request
 
 ## Description 
-I have developed a back-end application using Node.js for storing the data on an incoming request from a front-end application containing code. MySQL database is used for storing the data.
+I have developed a back-end application using Node.js to store data from front-end application. Database used is MySQL.
 
 ## Prerequisites :
 ### NPM
@@ -49,21 +49,24 @@ npm install
 ## Validations Done
 
 * Securing the application by adding HTTP headers ***X-XSS-Protection →1; mode=block***  to avoid xss attacks using [helmet](https://www.npmjs.com/package/helmet) 
-* Added HTML content filter by using  [xss](https://www.npmjs.com/package/xss)  to prevent XSS attacks from the user Input
-* Empty contents are avoided in store process.
+* Added HTML content filter by using  [xss](https://www.npmjs.com/package/xss)  to prevent XSS attacks from the user input
+* Empty contents validation done.
 
 ## Run Application
 ### DB Script
-Initially, we need to run the query in [starter_script.sql](https://github.com/rajaabinesh/Node-Javasctipt-IDE-Backend-/blob/master/DB%20Script/starter_script.sql)
+Initially, we need to run [starter_script.sql](https://github.com/rajaabinesh/Node-Javasctipt-IDE-Backend-/blob/master/DB%20Script/starter_script.sql). Execute the below query in your MySQL,
+```bash
+source /your_location/starter_script.sql
+```
 
 ### Start Server
-  Start the Server by using the following command
+  Start the Server by using the following command,
   ```bash
 npm start
 ```
 ### List of APIs
 Sharing postman collection: https://www.getpostman.com/collections/ad1b13b0c38bf9a1a409
-We are using two APIs
+We are using two APIs listed below.
 
 #### 1.Storing the data in the db
  ```javascript 
