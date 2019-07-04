@@ -17,7 +17,7 @@ I have developed a back-end application using Node.js for storing the data on an
     MySQL v( 5.7.26-ndb-7.6.10)
   
 ### Packages :
- * [asyncawait v1.0.8](https://www.npmjs.com/package/asyncawait) - Avoid Callbacks hell
+ * [asyncawait v1.0.8](https://www.npmjs.com/package/asyncawait) - Solving the problem of Callback hell
  * [body-parser v1.17.0](https://www.npmjs.com/package/body-parser) - Parse incoming request bodies in a middleware
  * [express v4.15.0](https://www.npmjs.com/package/express) - Fast, unopinionated, minimalist web framework for node
  * [helmet v3.18.0](https://www.npmjs.com/package/helmet) - Secure your Express apps by setting various HTTP headers
