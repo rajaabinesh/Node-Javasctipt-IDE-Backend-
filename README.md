@@ -7,7 +7,7 @@
 * Validate the incoming request
 
 ## Description 
-I have developed a back-end application using Node.js for storing the data on an incoming request from a front-end application   containing code. MySQL database is used for storing the data.
+I have developed a back-end application using Node.js for storing the data on an incoming request from a front-end application containing code. MySQL database is used for storing the data.
 
 ## Prerequisites :
 ### NPM
@@ -54,7 +54,7 @@ npm install
 
 ## Run Application
 ### DB Script
-Initially we need to run the query in [starter_script.sql](https://github.com/rajaabinesh/Node-Javasctipt-IDE-Backend-/blob/master/DB%20Script/starter_script.sql)
+Initially, we need to run the query in [starter_script.sql](https://github.com/rajaabinesh/Node-Javasctipt-IDE-Backend-/blob/master/DB%20Script/starter_script.sql)
 
 ### Start Server
   Start the Server by using the following command
@@ -62,7 +62,7 @@ Initially we need to run the query in [starter_script.sql](https://github.com/ra
 npm start
 ```
 ### List of APIs
-Sharing postman collection : https://www.getpostman.com/collections/ad1b13b0c38bf9a1a409
+Sharing postman collection: https://www.getpostman.com/collections/ad1b13b0c38bf9a1a409
 We are using two APIs
 
 #### 1.Storing the data in the db
@@ -82,7 +82,7 @@ We are using two APIs
                     "code": "function myFunction() {\n  var str = \"How are you doing today?\";\n  var res = str.split(\"                                   \");\n\tconsole.log(res)\n}"
                   }
                 }
-```		
+```        
 
 #### 2. Fetching the data from Front-end
  ```javascript 
@@ -90,7 +90,7 @@ We are using two APIs
     Method   : GET
     URL      : http://localhost:8085/api/file
     Response :
-    		{
+            {
                   "code": 200,
                   "status": "success",
                   "message": "File Sent Successfully",
@@ -103,9 +103,7 @@ We are using two APIs
                             "text_code": "function myFunction() {\n  var str = \"How are you doing today?\";\n  var res =                                             str.split(\" \");\n\tconsole.log(res)\n}"
                             }
                    }
-		
+        
 ``` 
 ## Front-End :
-Refer : https://github.com/suriyagsmplusinfotech/react-javascript-ide
-    
-    
+Refer: https://github.com/suriyagsmplusinfotech/react-javascript-ide
